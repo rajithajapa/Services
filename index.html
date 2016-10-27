@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myApp">
+    <head>
+        
+<!-- Here in the program it is the View in the MVC Model-->
+        
+        <meta charset="UTF-8">
+        <title> Document </title>
+    </head>
+     <body ng-controller="MyCtrl">
+         {{test}}
+         
+         <table>
+             <tr>
+                <td>Name</td>
+                 <td>Age</td>
+             </tr>
+             <tr ng-repeat="user in users">
+                 <td>{{user.name}}</td>
+                 <td>{{user.age}}</td>
+                
+             </tr>
+             <button ng-click="getUsers()">Show Users</button>
+         </table>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="script.js"></script>
+
+     </body>
+</html>
